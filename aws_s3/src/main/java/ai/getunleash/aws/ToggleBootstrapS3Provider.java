@@ -1,7 +1,7 @@
 package ai.getunleash.aws;
 
-import no.finn.unleash.repository.ToggleBootstrapFileProvider;
-import no.finn.unleash.repository.ToggleBootstrapProvider;
+import io.getunleash.repository.ToggleBootstrapFileProvider;
+import io.getunleash.repository.ToggleBootstrapProvider;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import software.amazon.awssdk.core.ResponseBytes;

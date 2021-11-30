@@ -1,9 +1,9 @@
 package ai.getunleash;
 
-import no.finn.unleash.DefaultUnleash;
-import no.finn.unleash.Unleash;
-import no.finn.unleash.repository.ToggleBootstrapFileProvider;
-import no.finn.unleash.util.UnleashConfig;
+import io.getunleash.DefaultUnleash;
+import io.getunleash.Unleash;
+import io.getunleash.repository.ToggleBootstrapFileProvider;
+import io.getunleash.util.UnleashConfig;
 
 public class UnleashExample {
 

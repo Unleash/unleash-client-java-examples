@@ -1,7 +1,7 @@
 package ai.getunleash;
 
-import no.finn.unleash.event.UnleashSubscriber;
-import no.finn.unleash.repository.ToggleCollection;
+import io.getunleash.event.UnleashSubscriber;
+import io.getunleash.repository.ToggleCollection;
 
 import static java.lang.String.format;
 

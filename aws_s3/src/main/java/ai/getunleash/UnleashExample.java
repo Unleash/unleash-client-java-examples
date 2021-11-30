@@ -1,9 +1,9 @@
 package ai.getunleash;
 
 import ai.getunleash.aws.ToggleBootstrapS3Provider;
-import no.finn.unleash.DefaultUnleash;
-import no.finn.unleash.Unleash;
-import no.finn.unleash.util.UnleashConfig;
+import io.getunleash.DefaultUnleash;
+import io.getunleash.Unleash;
+import io.getunleash.util.UnleashConfig;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import software.amazon.awssdk.regions.Region;
