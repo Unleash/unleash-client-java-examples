@@ -8,7 +8,7 @@ public class Runner {
     public static void main(String[] args) {
         UnleashConfig config = UnleashConfig.builder().appName("customstrategy").unleashAPI("http://localhost:4242")
                 .customHttpHeader("Authentication", System.getenv("UNLEASH_API_KEY")).build();
-        Unleash unleash = new DefaultUnleash(config, new ExpiryDateStrategy());
+        Unleash unleash = new DefaultUnleash(config, new ExpiryDateStrategy(), new ActiveFromDateStrategy());
         unleash.isEnabled("my.expired.date.toggle");
     }
 }

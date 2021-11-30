@@ -1,20 +1,16 @@
 package io.getunleash.example;
 
-import io.getunleash.Constraint;
-import io.getunleash.UnleashContext;
 import io.getunleash.strategy.Strategy;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
-import java.util.List;
 import java.util.Map;
 
-public class ExpiryDateStrategy implements Strategy {
-    private static final DateTimeFormatter iso = DateTimeFormatter.ISO_DATE;
+public class ActiveFromDateStrategy implements Strategy {
+
     @Override
     public String getName() {
-        return "ExpiryDate";
+        return "ActiveFromDate";
     }
 
     @Override
@@ -23,18 +19,12 @@ public class ExpiryDateStrategy implements Strategy {
             String expiryDate = parameters.get("expiryDate");
             try {
                 LocalDate expiry = LocalDate.parse(expiryDate);
-                return !LocalDate.now().isAfter(expiry);
+                return !LocalDate.now().isBefore(expiry);
             } catch (DateTimeParseException dpe) {
                 return false;
             }
         }
         return false;
     }
-
-
-
-
-
-
 
 }
